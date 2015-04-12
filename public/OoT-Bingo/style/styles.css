@@ -56,6 +56,10 @@ body {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
   line-height: 15px;
 }
+.modal {
+  text-shadow: none;
+  color: #000000;
+}
 .always_scrollbar {
   overflow-y: scroll;
 }
