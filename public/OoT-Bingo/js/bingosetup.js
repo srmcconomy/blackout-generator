@@ -14,6 +14,7 @@ function bingosetup() {
 					{regex: /At least \d songs/, count: 0},
 					{regex: /(?:3 Shields & 3 [^\s]+|3 [^\s]+ & 3 Shields)/, count: 0},
 					{regex: /(?:3 Swords & 3 [^\s]+|3 [^\s]+ & 3 Swords)/, count: 0},
+					{regex: /(?:3 Boots & 3 [^\s]+|3 [^\s]+ & 3 Boots)/, count: 0},
 					{regex: /(?:All 5 Skulltulas in Shadow Temple|At least 4 Skulltulas in Shadow Temple)/, count: 0},
 					{regex: /(?:All 5 Skulltulas in Water Temple|At least 3 Skulltulas in Water Temple)/, count: 0},
 					{regex: /At least \d Magic Beans/, count: 0}
