@@ -44,20 +44,19 @@ function bingosetup() {
 		if(bingoBoard) {
 			for (i=1; i<=25; i++) {
 				for(var r of regexes) {
-					if (r.regex.exec(bingoBoard[i].name) != null) {r.count++;console.log(r);}
+					if (r.regex.exec(bingoBoard[i].name) != null) {r.count++;}
 					if (r.count > r.maxcount) bad = true;
 
 				}
 				for (j=1; j<=25; j++) {
 					if (i == j) continue;
-					if (bingoBoard[i].name == bingoBoard[j].name) {bad = true; console.log(bingoBoard[i]);}
+					if (bingoBoard[i].name == bingoBoard[j].name) {bad = true;}
 				}
 			}
 		} else {
 			bad = true;
 		}
 	} while(bad);
-	console.log(bingoOpts.seed);
 	$("#seed").text(bingoOpts.seed);
 	$("#link").text("http://www.speedrunslive.com/tools/oot-bingo/?seed=" + bingoOpts.seed)
 	$("#link").attr("href", "http://www.speedrunslive.com/tools/oot-bingo/?seed=" + bingoOpts.seed)
