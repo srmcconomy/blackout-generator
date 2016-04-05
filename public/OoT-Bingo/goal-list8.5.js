@@ -920,3 +920,5 @@ bingoList[25] = [{
   subtypes: ["wallet"],
   child: "no"
 }]
+
+module.exports = bingoList;
